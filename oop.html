@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ruimei's blog</title>
+  <script src = "myScript.js">
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;}
+    }
+  </style>
+</head>
+<body>
+<!--
+<button onclick="this.innerHTML+= Date()">The time is?</button>
+
+<p id = "demo"> </p> -->
+
+
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>ruimei's blog</h4>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="C:\Users\GWC-C5ZVG\Desktop\HTML\oop.html">le home page</a></li>
+        <li><a href="file:///C:/Users/GWC-C5ZVG/Desktop/HTML/index.html" target = "_blank">poptropica fanpage</a></li>
+        <li><a href="C:\Users\GWC-C5ZVG\Desktop\HTML\second.html" target ="_blank">other stuff</a></li>
+      </ul><br>
+
+    </div>
+
+    <div class="col-sm-9">
+      <h4><small>RECENT POSTS</small></h4>
+      <hr>
+      <h2>food is my passioné</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> post by ruimei li, july 15, 2019.</h5>
+      <h5><span class="label label-danger">food</span></h5><br>
+      <p>我喜欢吃 </p>
+      <p>dont forget to check out my poptropica fanpage</p>
+      <br><br>
+
+      <h4><small>RECENT POSTS</small></h4>
+      <hr>
+      <h2>my first day on earth</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> post by li ruimei, oct 3, 2002.</h5>
+      <h5><span class="label label-success">#urfavoriteday</span></h5><br>
+      <p>mark the date guys. today i came into the world. it's really smelly out here. yall be blessed. </p>
+      <hr>
+
+
+      <br><br>
+
+      <p><span class="badge">1</span> Comments:</p><br>
+
+
+        <div class="col-sm-2 text-center">
+          <img src="data:image/jpeg;base64,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" class="img-circle" height="65" width="65" alt="Avatar">
+        </div>
+        <div class="col-sm-10">
+          <h4>leppie not lippie <small>Sep 25, 2015, 8:25 PM</small></h4>
+          <p>wow u are so cool! i am looking forward to read about your trendy life. </p>
+          <br>
+          <p>
+          <div class="row">
+            <div class="col-sm-2 text-center">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQswnoQ98x98Mbt_g3CaU2u9U9UVOgVNOzF9CyrItVXJ_2_SiqL" class="img-circle" height="65" width="65" alt="Avatar">
+            </div>
+            <div class="col-xs-10">
+              <h4>snek <small>Sep 25, 2015, 8:28 PM</small></h4>
+              <p>me too! we stan. </p>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
